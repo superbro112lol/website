@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2K38</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/MainlyText.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div>
+      <h1>What is Y2K38</h1>
+      <p>
+        Y2K38 is a bug in old software that is caused by an integer overflow, more specifically an signed (means that it could be negative too) 32 bit integer overflow in unix time.
+      </p>
+      
+      <p>
+        What is an integer overflow you may ask, but to answer that question i need to also talk about what is an integer?
+        Integer is type of data that can hold negative numbers and positive numbers but in programming there are different types of integers unsigned, signed and how many numbers they store. 32 bit signed integers can hold numbers from -2147483648 and up to 2147483647.
+      </p>
+      <p>
+        Integer overflow happens when you try to add [some number] to 2147483647 and it rolls back to -2147483648
+      </p>
+      <h2>What is unix time</h2>
+      <p>
+        Unix time is a standart for storing time and date on computers, unix time started at January 1st, 1970, at midnight which means that 0 in unix time is January 1st, 1970, midnight and unix time counts up every second
+      </p>
+      <h2>What happens in 2038</h2>
+      <p>
+        Unix time reachies the 32 bit signed integer limit and a second later (on old software or hardware) it overflows and softwaqre think that -2147483648 seconds passed
+      </p>
+    </div>
+  </body>
+</html>
